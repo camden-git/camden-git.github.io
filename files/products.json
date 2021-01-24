@@ -4,6 +4,9 @@
             "Yatopia": "https://cdn.discordapp.com/attachments/802717775675523082/802757425932271656/Yatopia.json",
             "Forge": "https://cdn.discordapp.com/attachments/802717775675523082/802751419568226304/forge.json",
             "Fabric": "https://cdn.discordapp.com/attachments/802717775675523082/802756849740546058/fabric.json"
+            },
+            "Terraria": {
+            "Vanilla": "https://cdn.discordapp.com/attachments/802717775675523082/802756719737831424/terraria.json"
        
         }
     }
