@@ -2,6 +2,7 @@
     "Eggs": {
         "Minecraft": {
             "Yatopia": "https://cdn.discordapp.com/attachments/802717775675523082/802722962998427698/Yatopia.json",
+            "Forge": "https://cdn.discordapp.com/attachments/802717775675523082/802751419568226304/forge.json",
             "Fabric": "https://cdn.discordapp.com/attachments/802717775675523082/802723096237965332/fabric.json"
         }
     }
