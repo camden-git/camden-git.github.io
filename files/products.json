@@ -1,0 +1,8 @@
+{
+    "Eggs": {
+        "Minecraft": {
+            "MS-DOS 4.01": "https://dl.bobpony.com/dos/bootdisk/DOS4.01_bootdisk.zip",
+            "MS-DOS 5.0": "https://dl.bobpony.com/dos/bootdisk/DOS5.0_bootdisk.zip"
+        }
+    }
+}
