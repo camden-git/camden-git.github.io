@@ -1,12 +1,12 @@
 {
     "Eggs": {
         "Minecraft": {
-            "Yatopia": "https://cdn.discordapp.com/attachments/802717775675523082/802757425932271656/Yatopia.json",
-            "Forge": "https://cdn.discordapp.com/attachments/802717775675523082/802751419568226304/forge.json",
-            "Fabric": "https://cdn.discordapp.com/attachments/802717775675523082/802756849740546058/fabric.json"
+            "Yatopia": "https://cdn.discordapp.com/attachments/802717775675523082/802937416486092820/Yatopia.json",
+            "Forge": "https://cdn.discordapp.com/attachments/802717775675523082/802937654437871676/forge.json",
+            "Fabric": "https://cdn.discordapp.com/attachments/802717775675523082/802937507993616394/fabric.json"
             },
             "Terraria": {
-            "Vanilla": "https://cdn.discordapp.com/attachments/802717775675523082/802914837012414464/terraria.json"
+            "Vanilla": "https://cdn.discordapp.com/attachments/802717775675523082/802937656627429376/terraria.json"
        
         }
     }
