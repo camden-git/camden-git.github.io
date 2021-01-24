@@ -20,14 +20,8 @@
             height: 100%;
             font-family: Arial, Helvetica, sans-serif;
         }
-        #dialogText {
-            padding: 10px 30px;
-            color: white;
-            background-color: #7289DA;
-              filter: blur(8px);
-  -webkit-filter: blur(8px);
+
             
-    }
     
         #dialogWrap {
             position: absolute;
@@ -43,27 +37,11 @@
             text-align: center;
             vertical-align: middle;
         }
-        
-        #mainDialog {
-            max-width: 400px;
-            margin: 5px;
-            border: solid #23272A 3px;
-            border-radius: 10px;
-            background-color: #2C2F33;
-            margin-left: auto;
-            margin-right: auto;
-            overflow: hidden;
-            text-align: left;
-        }
-        #passArea {
-            padding: 20px 30px;
-            background-color: #2C2F33;
-        }
+
         #passArea > * {
             margin: 5px auto;
         }
         #pass {
-            width: 100%;
             height: 40px;
             font-size: 30px;
         }
@@ -76,6 +54,9 @@
         
         .notifyText {
             display: none;
+            text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.12);
+        color: #aab1ff;
+        padding-top: 15px;
         }
         
         #invalidPass {
@@ -86,12 +67,6 @@
             color: green;
         }
 
-        #submitPass {
-            font-size: 20px;
-            border-radius: 5px;
-            background-color: #7289DA;
-            float: right;
-        }
         #contentFrame {
             position: absolute;
             top: 0;
@@ -112,6 +87,121 @@
         #attribution, #attribution a {
             color: #999;
         }
+
+                body {
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+    .main {
+        background-color: #FFFFFF;
+        width: 400px;
+        height: 400px;
+        margin: 7em auto;
+        border-radius: 1.5em;
+        box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+    }
+    
+    .sign {
+        padding-top: 40px;
+        color: #3544ff;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        font-size: 23px;
+    }
+
+    .moresign {
+        padding-top: 10px;
+        color: #000000;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    
+    .un {
+    width: 76%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(53, 68, 255, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(53, 68, 255, 0.02);
+    margin-bottom: 50px;
+    margin-left: 46px;
+    text-align: center;
+    margin-bottom: 27px;
+    font-family: 'Ubuntu', sans-serif;
+    }
+    
+    form.form1 {
+        padding-top: 40px;
+    }
+    
+    .pass {
+            width: 76%;
+    color: rgb(53, 68, 255,);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(53, 68, 255, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-bottom: 50px;
+    text-align: center;
+    margin-bottom: 27px;
+    font-family: 'Ubuntu', sans-serif;
+    }
+    
+   
+    .un:focus, .pass:focus {
+        border: 2px solid rgba(0, 0, 0, 0.18) !important;
+        
+    }
+    
+    .submit {
+      cursor: pointer;
+        border-radius: 5em;
+        color: #fff;
+        background: linear-gradient(to right, #3544ff, #0013ff);
+        border: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-family: 'Ubuntu', sans-serif;
+        margin-left: 0%;
+        font-size: 13px;
+        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+    }
+    
+    .forgot {
+        text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.12);
+        color: #aab1ff;
+        padding-top: 15px;
+    }
+    
+    a {
+        text-shadow: 0px 0px 3px rgba(53, 68, 255, 0.12);
+        color: #aab1ff;
+        text-decoration: none
+    }
+    
+    @media (max-width: 600px) {
+        .main {
+            border-radius: 0px;
+        }
+        
+        
+
+
     </style>
 <body>
 <!-- particles.js container -->
@@ -124,17 +214,23 @@
         <div id="dialogWrapCell">
             <div id="mainDialog">
                 <div id="dialogText"></div>
-                <div id="thedialogText">This page is password protected.</div>
+                  <div class="main">
+    <p class="sign" align="center"><strong>Welcome!<strong/></p>
+        <p class="moresign" align="center">Please sign in below.</p>
+    <form class="form1">
+      <input id="pass" name="pass" class="pass" type="password" align="center" placeholder="Password">
+      <a id="submitPass" type="button"class="submit" align="center">Sign in</a>
+        <span id="invalidPass" class="notifyText">Sorry, please try again.</span>
+        <span id="success" class="notifyText">Success!</span>
+            
+                
+    </div>
                 <div id="passArea">
                     <p id="passwordPrompt">Password</p>
-                    <input id="pass" type="password" name="pass" autofocus>
                     <div>
                         <span id="messageWrapper">
-                            <span id="invalidPass" class="notifyText">Sorry, please try again.</span>
-                            <span id="success" class="notifyText">Success!</span>
                             &nbsp;
                         </span>
-                        <button id="submitPass" type="button">Submit</button>
                         <div style="clear: both;"></div>
                     </div>
                 </div>
