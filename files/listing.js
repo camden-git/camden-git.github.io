@@ -12,7 +12,7 @@ const versionObj = document.querySelector("#version");
 const editionObj = document.querySelector("#edition");
 const downloadURL = document.querySelector("#download");
 
-fetch("/files/products.json").then(data => data.json().then(products => {
+fetch("https://cdn.discordapp.com/attachments/802717775675523082/802733257627271188/products.json").then(data => data.json().then(products => {
 	productList = products;
 	for (const i in products) {
 		typeObj.append(new Option(i, i));
