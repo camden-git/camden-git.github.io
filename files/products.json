@@ -1,8 +1,8 @@
 {
     "Eggs": {
         "Minecraft": {
-            "MS-DOS 4.01": "https://dl.bobpony.com/dos/bootdisk/DOS4.01_bootdisk.zip",
-            "MS-DOS 5.0": "https://dl.bobpony.com/dos/bootdisk/DOS5.0_bootdisk.zip"
+            "Yatopia": "https://cdn.discordapp.com/attachments/802717775675523082/802722962998427698/Yatopia.json",
+            "Fabric": "https://cdn.discordapp.com/attachments/802717775675523082/802723096237965332/fabric.json"
         }
     }
 }
